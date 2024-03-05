@@ -1,0 +1,91 @@
+:root {
+  --youtube-red: #FF0000;
+  --youtube-white: #FFFFFF;
+  --youtube-black: #282828;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding-inline: 30px;
+}
+header .one {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+header .one i {
+  font-size: 1.2rem;
+}
+header .one svg {
+  width: 90px;
+}
+header .two {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+}
+header .two input {
+  flex-grow: 1;
+  height: 65%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #d1d1d1;
+  padding-left: 10px;
+}
+header .two .search-button {
+  height: 72%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #d1d1d1;
+  border-left: none;
+  padding-inline: 20px;
+  background-color: #f8f8f8;
+}
+header .two .mic {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #eee;
+}
+header .three {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+header .three i {
+  font-size: 20px;
+}
+header .three .fa-user {
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+@media (max-width: 580px) {
+  input,
+  header .two .search-button {
+    display: none;
+  }
+  header .three .search-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 581px) {
+  header .three .search-button {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

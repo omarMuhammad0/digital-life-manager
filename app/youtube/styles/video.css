@@ -1,0 +1,44 @@
+.video {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.video:hover {
+  cursor: pointer;
+}
+.video > div {
+  display: flex;
+  padding-top: 10px;
+}
+.video > div > span {
+  padding-left: 10px;
+}
+.video > div > span .title {
+  max-width: 100%;
+  padding-bottom: 5px;
+  font-size: 1rem;
+}
+.video > div > span .channel-name, .video > div > span .more-info {
+  font-size: 0.8rem;
+  color: rgb(87, 87, 87);
+}
+.video > div > span .more-info {
+  display: flex;
+  gap: 10px;
+  padding-top: 5px;
+}
+.video > div * {
+  padding: 0;
+  margin: 0;
+}
+.video .thumbnail {
+  width: 100%;
+  height: 200px;
+  border-radius: 13px;
+}
+.video .channel-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}/*# sourceMappingURL=video.css.map */

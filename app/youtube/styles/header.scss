@@ -31,22 +31,58 @@ header {
         justify-content: space-between;
         justify-self: center;
 
+        .before-input {
+            border: 1px solid rgb(70, 104, 214);
+            border-right: 0px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 35px;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+
+        }
         input {
             flex-grow: 1;
-            height: 65%;
+            height: 35px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             border: 1px solid #d1d1d1;
             padding-left: 10px;
+            z-index: 1;
+            outline: none;
+            padding-block: 0px;
+
+            &:focus {
+                border: 1px solid rgb(70, 104, 214);
+                border-left: none;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
         }
-        .search-button {
-            height: 72%;
+        .search-button-holder {
+            height: 35px;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             border: 1px solid #d1d1d1;
             border-left: none;
-            padding-inline: 20px;
             background-color: #f8f8f8;
+
+            button {
+                width: 100%;
+                height: 100%;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                padding-inline: 20px;
+                border: 0px;
+                outline: none;
+
+                &:focus {
+                    border: 1px solid rgb(70, 104, 214);
+                }
+            }
         }
         .mic {
             width: 40px;
@@ -79,7 +115,7 @@ header {
 }
 @media (max-width: 580px) {
     input,
-    header .two .search-button {
+    header .two .search-button-holder {
         display: none;
     }
     header .three .search-button {

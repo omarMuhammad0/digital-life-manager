@@ -1,0 +1,42 @@
+.main-section {
+    display: flex;
+    width: 100%;
+    
+    .nav {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+
+        .one {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px 0 10px 10px;
+            width: 100%;
+            height: fit-content;
+            border-bottom: 1px solid #dedede;
+
+            a {
+                padding: 12px 20px 12px 20px;
+                background-color: #eee;
+                border-radius: 10px;
+
+                span {
+                    font-size: 1rem;
+                }
+
+                i {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    .video-section {
+        width: 100%;
+        padding-inline: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

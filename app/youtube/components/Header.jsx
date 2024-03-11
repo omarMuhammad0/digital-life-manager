@@ -1,5 +1,5 @@
 import '../../../public/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css'
-import "../styles/style.css"
+import "../styles/header.css"
 
 export default function Header() {
     
@@ -28,8 +28,9 @@ export default function Header() {
             </div>
 
             <div className='two'>
+                <span className='before-input'><i class="fa-solid fa-magnifying-glass"></i></span>
                 <input placeholder='Search' />
-                <button className='search-button'><i class="fa-solid fa-magnifying-glass"></i></button>
+                <span className='search-button-holder'><button><i class="fa-solid fa-magnifying-glass"></i></button></span>
             </div>
 
             <div className='three'>

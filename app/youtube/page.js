@@ -1,4 +1,5 @@
 import Header from "./components/Header"
+import MainSection from "./components/MainSection"
 
 export const metadata = {
     title: "Youtube",
@@ -11,6 +12,7 @@ export default function Youtube() {
         <>
             <section>
                 <Header />
+                <MainSection />
             </section>
         </>
     )
